@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REM vs PX Showdown</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background: pink;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #4caf50; /* Green */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Card using PX */
+        .card-px {
+            width: 300px;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f); /* Gradient for PX card */
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-px:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-px h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ff5722; /* Orange */
+        }
+
+        .card-px p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Card using REM */
+        html {
+            font-size: 16px; /* Base font size for rem */
+        }
+
+        .card-rem {
+            width: 18.75rem; /* 300px equivalent */
+            padding: 1.25rem; /* 20px equivalent */
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Gradient for REM card */
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-rem:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-rem h2 {
+            font-size: 1.5rem; /* 24px equivalent */
+            margin-bottom: 0.625rem; /* 10px equivalent */
+            color: #0078d7; /* Blue */
+        }
+
+        .card-rem p {
+            font-size: 1rem; /* 16px equivalent */
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card-px, .card-rem {
+                width: 90%; /* Make both cards responsive */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>REM vs PX Showdown</h1>
+    <div class="container">
+        <!-- Card using PX -->
+        <div class="card-px">
+            <h2>Card Using PX</h2>
+            <p>This card uses px for measurements. It is fixed and doesn't scale with the root font size.</p>
+        </div>
+
+        <!-- Card using REM -->
+        <div class="card-rem">
+            <h2>Card Using REM</h2>
+            <p>This card uses rem for measurements. It scales with the root font size, making it more flexible.</p>
+        </div>
+    </div>
+</body>
+</html>

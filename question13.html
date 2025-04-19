@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            background-color: #f0f8ff; /* Light Blue */
+        }
+
+        /* Fixed Header */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #4caf50; /* Green */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Fixed Footer */
+        .fixed-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ff5722; /* Orange */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Relative Container */
+        .relative-container {
+            position: relative;
+            margin: 7rem auto; /* Adjusted for header and footer spacing */
+            width: 80%;
+            background-color: #ffffff; /* White */
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .relative-container h2 {
+            color: #4caf50; /* Green */
+        }
+
+        /* Absolute Container */
+        .absolute-container {
+            position: absolute;
+            top: 12rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            background-color: #ffeb3b; /* Yellow */
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .absolute-container h2 {
+            color: #ff5722; /* Orange */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .relative-container {
+                width: 90%;
+                margin: 8rem auto;
+            }
+
+            .absolute-container {
+                width: 80%;
+                top: 14rem;
+            }
+
+            .fixed-header,
+            .fixed-footer {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Positioning Examples</title>
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>Fixed Header</h1>
+    </header>
+
+    <div class="relative-container">
+        <h2>Relative Positioning</h2>
+        <p>This box is positioned relative to its normal flow in the document.</p>
+    </div>
+
+    <div class="absolute-container">
+        <h2>Absolute Positioning</h2>
+        <p>This box is positioned absolutely within its nearest positioned ancestor.</p>
+    </div>
+
+    <footer class="fixed-footer">
+        <p>Fixed Footer</p>
+    </footer>
+</body>
+</html>

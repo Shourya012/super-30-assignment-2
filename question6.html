@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .box {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a0dad; /* Dark purple */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6a0dad; 
+            color: white;
+        }
+
+        .content tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .content tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .content td {
+            color: #333; /* Dark text color */
+        }
+
+        .footer {
+            background-color: #6a0dad; 
+            color: white; 
+            font-weight: bold;
+        }
+
+        .table {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            background-color: #ffcccb; /* Light red for emphasis */
+            font-weight: bold;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Table</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Creation of Tables</h1>
+        <table class="table">
+            <thead class="header">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody class="content">
+                <tr>
+                    <td rowspan="2" class="highlight">Rahul</td>
+                    <td>20</td>
+                    <td>Delhi</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Mumbai</td>
+                </tr>
+                <tr>
+                    <td>Rohan</td>
+                    <td>22</td>
+                    <td rowspan="2" class="highlight">Pune</td>
+                </tr>
+                <tr>
+                    <td>Shubham</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="highlight">Aman</td>
+                    <td>Chennai</td>
+                </tr>
+            </tbody>
+            <tfoot class="footer">
+                <tr >
+                    <td colspan="3">End of the Table</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

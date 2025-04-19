@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a0dad; /* Dark purple */
+            margin-top: 20px;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #6a0dad; /* Dark purple */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffcc00;
+            color: #6a0dad; 
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Navigation Bar</title>
+</head>
+<body>
+    <h1>Creating a Navigation Bar</h1>
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#index">Menu 1</a></li>
+                <li><a href="#section">Menu 2</a></li>
+                <li><a href="#img">Menu 3</a></li>
+                <li><a href="#footer">Menu 4</a></li>
+                <li><a href="#footer">Menu 5</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

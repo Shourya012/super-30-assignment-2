@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #6a0dad; /* Dark purple */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Gold color on hover */
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a0dad;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #ff8c00; /* Dark orange */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Section-Specific Styles */
+        #index {
+            background-color: #ffcccc; /* Light red */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #section {
+            background-color: #ccffcc; /* Light green */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #class {
+            background-color: #e6f7ff; /* Light blue */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #img {
+            background-color: #ffffcc; /* Light yellow */
+            padding: 20px;
+            border-radius: 5px;
+        }
+        dl {
+            padding-left: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            main {
+                padding: 15px;
+            }
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Document</title>
+</head>
+<body>
+    <div id="class">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#index">Unordered List</a></li>
+                    <li><a href="#section">Ordered List</a></li>
+                    <li><a href="#img">Defination list </a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Ordered and Unordered Lists</h1>
+            <section id="index">
+                <h3>Unordered List of Games I Play</h3>
+                <ul>
+                    <li>COC Game</li>
+                    <li>Chess</li>
+                    <li>Football</li>
+                    <li>Among Us</li>
+                </ul>
+            </section>
+            <section id="section">
+                <h3>Ordered List of Movies I Watch</h3>
+                <ol>
+                    <li>Avengers</li>
+                    <li>Spiderman</li>
+                    <li>Batman</li>
+                    <li>Harry Potter</li>
+                </ol>
+            </section>
+            <section id="img">
+                <h3>Defination list </h3>
+                <dl> 
+                    <dt>HTML</dt>
+                    <dd>Hypertext Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                    <dt>JavaScript</dt>
+                    <dd>A programming language for web development</dd>
+                </dl>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>Copyright © 2023</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        /* Product Card Styling */
+        .product-card {
+            background-color: pink;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid red;
+        }
+
+        /* Product Info */
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .product-description {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .product-price {
+            font-size: 1.6rem;
+            color: yellow;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Buy Button */
+        .buy-button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.6rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .buy-button:hover {
+            background-color: darkgreen;
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .product-card {
+                max-width: 600px;
+                display: flex;
+                align-items: center;
+                text-align: left;
+            }
+
+            .product-image {
+                max-width: 50%;
+                border-right: 1px solid #ddd;
+            }
+
+            .product-info {
+                padding: 2rem;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Product Card</title>
+</head>
+<body>
+    <div class="product-card">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.jvR1Kn1luPhYMO3WmUfKaAHaHa&pid=Api&P=0&h=180" alt="Product Image" class="product-image">
+        <div class="product-info">
+            <h2 class="product-title">Samsung s24</h2>
+            <p class="product-description">Ram is 16GB, Storage is 256GB, Processor is Apple A14 Bionic, Screen is 6.7inch, Camera is 12MP, Battery is 3000mAh, and it is available in Black and White color.</p>
+            <p class="product-price">Rs.76,000</p>
+            <button class="buy-button"><a href="https://www.amazon.in/s?k=samsung+s24&adgrpid=1312818525174912&hvadid=82051426338501&hvbmt=be&hvdev=c&hvlocphy=150098&hvnetw=o&hvqmt=e&hvtargid=kwd-82052075322844%3Aloc-90&hydadcr=24572_2369334&mcid=a161e0cfa7c439c2afc2610b2b4d1e6a&msclkid=edb">Buy Now</a></button>
+        </div>
+    </div>
+</body>
+</html>
